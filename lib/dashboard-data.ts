@@ -1,5 +1,5 @@
 import type { LucideIcon } from "lucide-react"
-import { Inbox, AlertTriangle, Clock, ClipboardCheck, Bug, Bell, Mail } from "lucide-react"
+import { Inbox, Clock, Bug, Bell, Mail, Store, OctagonAlert } from "lucide-react"
 
 export type TicketCardData = {
   id: string
@@ -26,7 +26,7 @@ export const ticketCards: TicketCardData[] = [
     statusTone: "up",
     href: "#",
     icon: Inbox,
-    tone: "blue",
+    tone: "teal",
   },
   {
     id: "eskaliert",
@@ -37,7 +37,7 @@ export const ticketCards: TicketCardData[] = [
     status: "2 über SLA",
     statusTone: "alert",
     href: "#",
-    icon: AlertTriangle,
+    icon: OctagonAlert,
     tone: "red",
   },
   {
@@ -61,7 +61,7 @@ export const ticketCards: TicketCardData[] = [
     status: "Keine offenen Prüfungen",
     statusTone: "ok",
     href: "#",
-    icon: ClipboardCheck,
+    icon: Store,
     tone: "pink",
   },
   {
